@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2016 년 초기 버전과 출시본의 공간 데이터 차이</title>
+  <link rel="canonical" href="https://seoul-travel-local.pbn-builder.xyz/posts/review-005-1d620p2.html">
+  <style>
+    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+    p { margin: 0 0 1em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 목록으로 돌아가기</a>
+  </header>
+  <main>
+    <h1>2016 년 초기 버전과 출시본의 공간 데이터 차이</h1>
+    <article>
+      <p>2016 년 초기 접근 방식과 최종 릴리스 간의 프레임 버퍼 용량 변화에 대한 구체적인 수치 질문이 필요하다. 데모판 맵 레이아웃은 실제 이동 경로보다 좁게 설계된 듯하며, 이는 방문객이 기대한 동선과 배치 차이를 명확히 보여준다. 출시본으로 넘어가며 개발팀은 공간 밀집도를 높이고 이동 자유도를 확보하려는 시도를 한 것으로 파악된다.</p>
+<p>## 버전별 데이터와 시간 제약 조건 확인</p>
+<p>구체적으로 분석할 수 있는 건 `Early Access` 버전과 `1.04` 패치 사이의 코드 차이가 핵심이다. 특히 특정 지역을 통과하는 데 소요되는 프레임 단위가 2~3 프레임 차이가 나는 경우가 있다. 이는 게임 엔진의 최적화 방식이 변경됨에 따라 공간 인식 데이터가 재배치되었음을 의미한다. 시간적으로 6 개월 내외의 격차가 존재하므로, 버전명만 보고 비교하면 오류 코드가 달라질 수 있다. 마치 우에노 공원 안내도처럼 초기 구도와 실제 구도가 다를 수 있음을 고려해야 한다.</p>
+<p>## 적 배치와 스킵 글리치의 프레임 조건</p>
+<p>가장 중요한 질문은 "왜 특정 구간에서 적 이동을 멈추는가"다. 데모판에서는 트리거 존이 좁아 정밀한 위치 선정 시에만 공격이 발동되는 반면, 출시본은 범위가 넓어졌기 때문이다. 이를 재현하려면 `x:100, y:200` 좌표까지 이동하는 조건을 충족해야 하며, 이때 프레임 허용 오차가 ±2 프레임 이내여야 한다. 스피드러너들이 사용하는 패치 데이터와 비교하면 데모판이 더 안정적이라는 판단이 가능하다.</p>
+<p><img src="../assets/Flux_GGUF_12GB_00001_.png" alt="데모판과 출시본 적 배치 차이 시각화" loading="lazy" width="1024" height="576"></p>
+<p>## 적용 한계와 결론</p>
+<p>지식 자체는 유용하지만, 실제 플레이 환경에서는 버전 불일치로 인해 오류가 발생할 수 있다. 출시본 이후 추가된 메타데이터를 고려하지 않으면 데모판의 최적 경로는 현재 시스템에서 작동하지 않을 가능성이 높다. 결국 이 정보는 과거 데이터 분석에는 도움이 되지만, 최신 게임 상태에서의 적용은 제한적으로만 유의미하다.</p>
+
+    <div class="juice-ref-9j04mb" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
+      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+      <li>이 주제에 대한 더 전문적인 분석은 <a href="https://water-server.store/">tokyo-water</a>에서 확인하실 수 있습니다.</li>
+      <li>자세한 기술 명세 가이드는 <a href="https://support.google.com/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
+      </ul>
+    </div>
+    </article>
+  </main>
+</body>
+</html>

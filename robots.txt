@@ -7,10 +7,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-User-agent: Yeti
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-Sitemap: https://ueno-park.pages.dev/sitemap.xml
+Sitemap: https://seoul-travel-local.pbn-builder.xyz/sitemap.xml

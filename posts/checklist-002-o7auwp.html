@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>엘든링 미사용 보스 탐색, Ueno park 안내처럼 위험한 구역의 체크리스트</title>
+  <link rel="canonical" href="https://seoul-travel-local.pbn-builder.xyz/posts/checklist-002-o7auwp.html">
+  <style>
+    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+    p { margin: 0 0 1em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 목록으로 돌아가기</a>
+  </header>
+  <main>
+    <h1>엘든링 미사용 보스 탐색, Ueno park 안내처럼 위험한 구역의 체크리스트</h1>
+    <article>
+      <p><img src="../assets/bpaas_00103_.png" alt="엘든링 데이터마이닝 과정에서 발견된 미사용 보스의 프레임 단위 분석 및 우에노 공원 가이드 경로와 유사한 탐험 루트 설계" loading="lazy" width="1344" height="768"></p>
+<p>아, 사실은 패치 후 재현이 불가능해진 그 순간의 프레임 데이터가 궁금해. 많은 사람이 미사용 보스는 그냥 개발자가 지웠다고만 생각하지만, 우에노 공원의 임시 폐쇄 구역처럼 '상황적 유지보수'로 사라진 경우가 대부분이다. 특히 특정 스피드러너들이 발견한 글리치 패치는 보스 AI 의 행동 트리 구조를 완전히 붕괴시켰다.</p>
+<p>## 마스터의 판단: 왜 3 종류가 생겼는지</p>
+<p>일반론대로 보면 밸런스 조정이나 스토리 완성도가 부족해서였겠지만, 실제로는 더 거친 기술적 부채가 원인이다. 첫 번째 유형은 메모리 누수 방지 목적의 강제 제거로, 두 번째는 아키타입 중복으로 인한 중복 로딩 문제고, 세 번째는 테스트용 NPC 의 데이터 충돌 사례다. 우에노 공원의 동선과 비슷하게, 최적화되지 않은 구간이 보스 방을 기준으로 나뉘어 정리된다.</p>
+<p><img src="../assets/Flux_GGUF_12GB_00003_.png" alt="게임 내 미공개 컨텐츠 구조도 및 데이터 마이닝 도구 사용 방법 비교" loading="lazy" width="1024" height="1024"></p>
+<p>구체적인 실패 원인을 따지면, 첫 번째 유형은 버전업 시 충돌 체크가 안 된 경우다. 두 번째 유형은 스피드런에서 프레임 단위로 우회할 때 보스가 죽지 않는 버그를 발견한 사례로, 이는 보통 패치 노트에 'AI 최적화'라고 나열되어 있다. 세 번째는 가장 흔한 '테스트용 NPC 로 오프닝이 연결되지 않음' 상황인데, 이때도 데이터 마이닝 툴을 쓰면 소문 없는 보스 데이터를 찾을 수 있다.</p>
+<p>결국 실행 전 마지막 확인 질문은 세 가지다. 패치 버전이 어떤지 정확히 인지하는가? 프레임 단위로 스킵이 가능한지 테스트한 적이 있는가? 그리고 우에노 공원의 지도처럼 전체 맵 구조를 이해하고 있는지 검증했는가?</p>
+
+    <div class="juice-ref-sp30jj" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
+      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+      <li>관련 업계 트렌드와 통계는 <a href="https://hikari-fiber.store/">tokyo-fiber</a>에 정리되어 있습니다.</li>
+      <li>보다 권위있는 출처의 공식 정보는 <a href="https://water-server.store/">tokyo-water</a>에서 제공 중입니다.</li>
+      <li>자세한 기술 명세 가이드는 <a href="https://github.com/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
+      </ul>
+    </div>
+    </article>
+  </main>
+</body>
+</html>

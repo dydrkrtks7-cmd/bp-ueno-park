@@ -1,27 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https:///</loc>
-    <lastmod>2026-06-15</lastmod>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/</loc>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https:///blog.html</loc>
-    <lastmod>2026-06-15</lastmod>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/about.html</loc>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https:///about.html</loc>
-    <lastmod>2026-06-15</lastmod>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/blog.html</loc>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https:///feed.xml</loc>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/posts/checklist-001-zssyrn.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/posts/checklist-002-m71o2w.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/posts/checklist-002-o7auwp.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/posts/compare-001-1vqitap.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/posts/compare-001-sysln3.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/posts/interview-001-1kmx367.html</loc>
     <lastmod>2026-06-15</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/posts/interview-003-1r2az3d.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/posts/interview-004-1rpmj6q.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/posts/interview-004-5pd0pt.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/posts/myth-002-1ev04y8.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/posts/myth-003-1uzx7kt.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/posts/myth-003-bru1m3.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/posts/review-005-1d620p2.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/posts/t3link-002-ojhbjb.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/posts/t3link-004-1nse9dr.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/posts/t3link-005-10yxx4i.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoul-travel-local.pbn-builder.xyz/posts/t3link-005-1hew7s6.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 </urlset>
