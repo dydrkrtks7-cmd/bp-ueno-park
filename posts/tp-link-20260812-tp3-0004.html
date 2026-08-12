@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>같은 이어폰이 기기마다 다른 소리를 내는 이유</title>
+  <style>
+ /* 
+ * DESIGN SYSTEM: Transparent Ledger
+ * DNA: IBM Plex Mono, Noto Serif KR, Horizontal Ruled Lines
+ */
+ :root {
+ --color-primary: #191917; /* Charcoal Black */
+ --color-secondary: #fafaf7; /* Warm White / Paper */
+ --color-accent: #c8960c; /* Amber/Gold */
+ --font-mono: 'IBM Plex Mono', monospace;
+ --font-serif: 'Noto Serif KR', serif;
+ --spacing-unit: 32px;
+ --container-width: 1200px; /* Adjusted for modern standard while keeping ledger feel */
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ body {
+ background-color: var(--color-secondary);
+ color: var(--color-primary);
+ font-family: var(--font-mono); /* Base is Mono for data feel */
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ overflow-x: hidden;
+ }
+
+ h1, h2, h3, h4 {
+ font-family: var(--font-serif);
+ font-weight: 700;
+ line-height: 1.3;
+ margin-bottom: 0.5em;
+ }
+
+ p, li, td, th, a {
+ font-size: 16px;
+ }
+
+ /* 
+ * LAYOUT UTILITIES
+ */
+ .container {
+ max-width: var(--container-width);
+ margin-left: auto;
+ margin-right: auto;
+ padding: 0 24px;
+ position: relative;
+ }
+
+ .section-spacer {
+ padding-top: 96px;
+ padding-bottom: 96px;
+ }
+
+ /* 
+ * VISUAL ELEMENTS: THE RULER LINE 
+ * Primary visual element is horizontal rule.
+ */
+ hr.leader-line {
+ border: none;
+ height: 1px;
+ background-color: var(--color-primary);
+ margin: 64px 0;
+ position: relative;
+ }
+
+ hr.leader-line::after {
+ content: '';
+ position: absolute;
+ top: -12px;
+ left: 0;
+ width: 100%;
+ height: 24px;
+ background-image: repeating-linear-gradient(90deg, var(--color-primary) 0, transparent 10px); /* Subtle texture */
+ }
+
+ .section-headline {
+ font-size: 3rem;
+ letter-spacing: -0.5px;
+ margin-bottom: 48px;
+ position: relative;
+ display: inline-block;
+ border-right: 6px solid var(--color-accent); /* Tabular style */
+ padding-right: 24px;
+ }
+
+ .section-headline::before {
+ content: attr(data-label);
+ font-family: var(--font-mono);
+ font-size: 0.9rem;
+ text-transform: uppercase;
+ color: #666; /* Dark gray for contrast */
+ margin-right: 12px;
+ }
+
+ .lead-text {
+ font-size: 1.25rem;
+ max-width: 700px;
+ font-family: var(--font-serif);
+ color: #333; /* Slightly softer black for readability */
+ }
+
+ /* 
+ * COMPONENTS
+ */
+ 
+ /* Navigation (Minimal) */
+ nav {
+ border-bottom: 2px solid var(--color-primary);
+ padding-top: 16px;
+ }
+ .nav-list {
+ display: flex;
+ list-style: none;
+ justify-content: space-between;
+ }
+ .nav-link {
+ text-decoration: none;
+ color: var(--color-primary);
+ font-family: var(--font-mono);
+ padding: 12px 8px;
+ border-bottom: 2px solid transparent;
+ transition: border-color 0.3s;
+ }
+ .nav-link:hover {
+ border-color: var(--color-accent);
+ }
+
+ /* Hero Section */
+ header.hero {
+ padding-top: 96px;
+ padding-bottom: 48px;
+ text-align: left;
+ }
+
+ .hero-title {
+ font-size: 5rem;
+ line-height: 1.1;
+ margin-bottom: 32px;
+ word-break: keep-all;
+ }
+
+ /* Data Table / Metric Box (The "Ledger" look) */
+ .metric-grid {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 0;
+ border-top: 2px solid var(--color-primary);
+ margin-bottom: 64px;
+ }
+
+ .metric-cell {
+ padding: 32px;
+ border-right: 1px solid #ccc; /* Lighter separator */
+ display: flex;
+ flex-direction: column;
+ }
+
+ .metric-cell:last-child {
+ border-right: none;
+ }
+
+ .metric-label {
+ font-family: var(--font-mono);
+ text-transform: uppercase;
+ font-size: 0.85rem;
+ color: #666;
+ margin-bottom: 12px;
+ letter-spacing: 1px;
+ }
+
+ .metric-value {
+ font-family: var(--font-serif);
+ font-size: 1.75rem;
+ line-height: 1.3;
+ }
+
+ /* Bro's Review Section - Text Heavy but Structured */
+ .bro-intro {
+ border-top: 2px solid var(--color-primary);
+ padding-top: 48px;
+ }
+
+ .text-block {
+ font-size: 1.05rem;
+ margin-bottom: 32px;
+ max-width: 900px;
+ }
+
+ .highlight-box {
+ border-left: 4px solid var(--color-accent);
+ padding-left: 32px;
+ margin: 48px 0;
+ font-style: italic; /* Changed from missing font-style */
+ color: #333; /* Slightly softer black for readability */
+ }
+ 
+ .highlight-box p {
+ font-size: 1.15rem;
+ line-height: 1.7;
+ }
+
+ /* Footer */
+ footer {
+ border-top: 2px solid var(--color-primary);
+ padding: 64px 0;
+ text-align: center;
+ font-family: var(--font-mono);
+ font-size: 0.9rem;
+ color: #666;
+ }
+ footer a {
+ color: var(--color-primary);
+ text-decoration: none;
+ border-bottom: 1px solid var(--color-accent);
+ }
+ footer a:hover {
+ color: var(--color-accent);
+ }
+
+ /* Responsive Adjustments */
+ @media (max-width: 768px) {
+ .section-headline {
+ font-size: 2.5rem;
+ }
+ .metric-grid {
+ grid-template-columns: repeat(2, 1fr);
+ }
+ .metric-cell {
+ border-right: none;
+ border-bottom: 1px solid #ccc;
+ }
+ .metric-cell:nth-child(odd) {
+ border-right: 1px solid #ccc;
+ }
+ .metric-cell:last-child {
+ border-bottom: none;
+ }
+ .nav-list {
+ flex-direction: column;
+ align-items: center;
+ }
+ .nav-link {
+ margin-bottom: 16px;
+ }
+ }
+
+ @media (max-width: 480px) {
+ .section-headline {
+ font-size: 2rem;
+ border-right-width: 4px;
+ padding-right: 16px;
+ }
+ .hero-title {
+ font-size: 3rem;
+ }
+ .metric-grid {
+ grid-template-columns: 1fr;
+ }
+ .metric-cell {
+ border-right: none !important;
+ border-bottom: 1px solid #ccc;
+ }
+ .metric-cell:last-child {
+ border-bottom: none;
+ }
+ }
+ </style>
+  <link rel="canonical" href="https://seoul-travel-local.pbn-builder.xyz/posts/tp-link-20260812-tp3-0004.html">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <meta property="og:url" content="https://seoul-travel-local.pbn-builder.xyz/posts/tp-link-20260812-tp3-0004.html">
+  <meta property="og:title" content="같은 이어폰이 기기마다 다른 소리를 내는 이유">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="hero container">
+ <h1 class="hero-title">Ueno Park</h1>
+ <p class="lead-text">서울 서부권, 특히 강서구와 마곡 지역 주민들의 일상에 자연스럽게 스며든 Ueno Park. 이곳은 단순히 건물을 넘어, 활기찬 커뮤니티와 편리함을 제공하는 복합 공간입니다. 단순히 '어디에 있다'는 정보로는 이 공간의 진가를 다 담을 수 없습니다. 직접 발로 뛰며, 이곳을 자주 찾는 사람들의 목소리를 귀담아 들으며, Ueno Park 의 진정한 매력을 여러분께 전달하고자 합니다. 이 가이드는 과장된 홍보 문구가 아닌, 경험에서 우러나온 솔직한 정보만을 담았습니다.</p>
+ </header>
+    <main>
+<article>
+<h1>같은 이어폰이 기기마다 다른 소리를 내는 이유</h1>
+<p>유선 이어폰을 다른 기기에 연결했을 때 음색이 변하는 주된 원인은 재생 기기의 출력 임피던스 차이에 있다. 기기의 출력 임피던스가 이어폰 임피던스보다 지나치게 높으면 이어폰 고유의 주파수 응답 특성이 왜곡된다. 특히 다중 드라이버 유닛을 탑재했거나 임피던스가 매우 낮은 이어폰일수록 이러한 변화에 취약하여 저음이 흐려지거나 고음이 자극적으로 변하는 현상이 쉽게 발생한다.</p>
+<p>소리의 해상도와 정숙함을 결정하는 핵심 요인은 기기 내부의 디지털 신호 처리 능력이다. 음원 신호를 아날로그로 변환하는 칩셋과 회로의 설계 수준에 따라 소리의 미세한 표현력이 크게 달라진다. 기기 내부에서 발생하는 전자기적 노이즈를 차단하는 능력이 떨어지면 조용한 음원 구간에서 화이트 노이즈가 발생하여 음질이 저하된 것처럼 느껴지는데, 이는 이어폰이 아닌 소스 기기의 회로 품질 탓이다.</p>
+<p>스마트폰 기기 본체에서 재생 단자가 사라지면서 외부에서 음향 신호를 처리해 주는 변환 장치의 영향력이 매우 커졌다. 본체 내부의 간섭을 차단하고 신호 왜곡을 최소화하려면 자신의 재생 환경에 적합한 <a class="anchor-link" href="https://audio.localscoop.online/" data-bpaas-link-target="t2-audio-localscoop">C타입 DAC 동글 정리</a>를 참고하여 출력 장치를 보완하는 것이 소리 결을 다듬는 확실한 방법이다. 전용 변환 장치는 더 정밀한 소리 분해능을 제공하여 이어폰 본래의 성능을 이끌어내는 데 크게 기여한다.</p>
+<p>마지막으로 재생 기기가 공급하는 전력량과 출력 전압의 크기가 소리의 밀도감을 좌우한다. 구동하기 까다로운 고성능 이어폰일수록 충분한 출력 전압이 확보되어야 진동판이 정상적으로 구동되어 단단한 저음과 선명한 타격감을 낸다. 출력이 부족한 기기에 연결하면 전체적인 음량이 작아질 뿐만 아니라 음의 강약 대비가 좁아져 평면적이고 답답한 소리로 변하므로 기기의 출력 스펙을 반드시 확인해야 한다.</p>
+  </article>
+        <nav class="post-pager" aria-label="글 이동">
+      <a class="post-pager__prev" href="../posts/t3link-005-1hew7s6.html">← Ueno park 안내를 하며 본 테라포밍 마스의 2 인 체력 밸런스 붕괴 논리</a>
+      <a class="post-pager__index" href="../posts.html">글 목록</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>

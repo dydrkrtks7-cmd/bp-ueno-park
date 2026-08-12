@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (3/3) · ueno-park</title>
+  <meta name="description" content="ueno-park에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://seoul-travel-local.pbn-builder.xyz/posts-3.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ :root {
+ --bg-color: #FAF8F5; /* Warm Off-white */
+ --text-primary: #1D1B1E;
+ --text-secondary: #696C71;
+ --accent-color: #FF4D20; /* Bold Orange-Red */
+ --card-bg: #FFFFFF;
+ --border-radius: 18px;
+ --font-stack: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+ --spacing-sm: 0.75rem;
+ --spacing-md: 1.5rem;
+ --spacing-lg: 3rem;
+ --container-width: 920px;
+ }
+
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+ body {
+ font-family: var(--font-stack);
+ background-color: var(--bg-color);
+ color: var(--text-primary);
+ line-height: 1.5;
+ -webkit-font-smoothing: antialiased;
+ }
+
+ h1, h2, h3 { line-height: 1.1; letter-spacing: -0.02em; font-weight: 800; }
+ 
+ a { color: var(--accent-color); text-decoration: none; transition: opacity 0.2s; }
+ a:hover { opacity: 0.7; }
+
+ .container {
+ max-width: var(--container-width);
+ margin: 0 auto;
+ padding: 0 var(--spacing-sm);
+ }
+
+ /* Navigation */
+ nav {
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ background: rgba(250, 248, 245, 0.9);
+ backdrop-filter: blur(10px);
+ border-bottom: 1px solid rgba(0,0,0,0.05);
+ }
+ 
+ .nav-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 64px;
+ max-width: var(--container-width);
+ margin: 0 auto;
+ padding: 0 var(--spacing-sm);
+ }
+
+ .logo { font-weight: 900; font-size: 1.25rem; letter-spacing: -0.03em; text-transform: uppercase;}
+ 
+ .nav-links a { margin-left: var(--spacing-md); color: var(--text-secondary); font-size: 0.95rem; }
+
+ /* Hero Section */
+ header.hero {
+ padding: var(--spacing-lg) 0;
+ border-bottom: 1px solid rgba(0,0,0,0.03);
+ }
+
+ .hero-title { font-size: clamp(2rem, 5vw, 4rem); margin-bottom: var(--spacing-md); color: #000; }
+ .hero-subtitle { font-size: 1.25rem; color: var(--text-secondary); max-width: 600px;}
+
+ /* Info Cards Grid */
+ .info-grid-section { padding: var(--spacing-lg) 0; }
+ 
+ .grid-cards {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: var(--spacing-md);
+ margin-top: var(--spacing-lg);
+ }
+
+ .card {
+ background: var(--card-bg);
+ border-radius: var(--border-radius);
+ padding: var(--spacing-lg);
+ box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+ transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+ }
+
+ .card:hover { transform: translateY(-5px); }
+ 
+ .card h3 { font-size: 1.25rem; margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: 8px;}
+ .card p, .card li { color: var(--text-secondary); font-size: 0.95rem; }
+ 
+ .tag-badge {
+ background: #FFF0E6;
+ color: #FF4D20;
+ padding: 4px 10px;
+ border-radius: 20px;
+ font-size: 0.75rem;
+ font-weight: 700;
+ }
+
+ /* Content Text Block */
+ .content-block { padding-bottom: var(--spacing-lg); }
+ .content-p { margin-bottom: var(--spacing-md); color: #3A3A3A; font-size: 1.1rem; }
+ 
+ /* FAQ Section - Accordion Style */
+ .faq-section { background-color: #F2EFE9; border-radius: 0 0 40px 0; padding: var(--spacing-lg) 0; margin-top: var(--spacing-lg); }
+
+ </style>
+  <meta property="og:title" content="글 목록 (3/3) · ueno-park">
+  <meta property="og:description" content="ueno-park에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://seoul-travel-local.pbn-builder.xyz/posts-3.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="hero container">
+ <h1 class="hero-title">Ueno Park, 강서구 마곡동에 숨겨진<br><span style="color: var(--accent-color);">색감의 캔버스</span></h1>
+ <p class="hero-subtitle">
+ 단순한 커피숍을 넘어선 공간. 강서구청 근처에서 느껴보지 못한 다른 종류의 '느낌'이 궁금하다면, 이 가이드를 따라오세요.
+ </p>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 51개 · 3/3 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/interview-004-1rpmj6q.html">우에노 공원의 길 같은 맵 구조론</a>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/interview-004-5pd0pt.html">NSA 프리즘 7 장 슬라이드에서 읽어야 할 우에노 공원의 지도와 같은 맥락</a>
+        <p class="post-item__summary">지난 목요일 오후, 서버실 유리창 너머로 비치는 구름 대신 파일 헤더 안 숨겨진 숫자들을 쫓다 보니 Slide 7 에 주목하게 됐어. 언론에서는 이름만 언급했지만, 이 페이지가 가진 진짜 의미는 단</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-002-1ev04y8.html">우에노공원 안내</a>
+        <p class="post-item__summary">우에노공원은 도심 속 대형 공원이라는 이미지 때문에 방문 목적을 한 가지로 좁혀 생각하기 쉽지만, 실제로는 계절과 방문 시간대에 따라 즐길 거리가 상당히 달라지는 곳이다. 아래에서는 이 공원에 대해</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-003-1uzx7kt.html">월매출 3 천만 찍고도 6 개월 만에 폐업한 건 원가 구조 문제였다</a>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-003-bru1m3.html">Ueno park 안내</a>
+        <p class="post-item__summary">우에노 공원은 도쿄의 대표적인 도심 속 자연 휴식 공간으로 수많은 방문객이 즐겨 찾는 명소입니다. 넓은 부지 안에는 울창한 나무들이 조성되어 있어 계절마다 변화하는 자연의 아름다움을 만끽할 수 있습</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/review-005-1d620p2.html">2016 년 초기 버전과 출시본의 공간 데이터 차이</a>
+        <p class="post-item__summary">2016 년 초기 접근 방식과 최종 릴리스 간의 프레임 버퍼 용량 변화에 대한 구체적인 수치 질문이 필요하다. 데모판 맵 레이아웃은 실제 이동 경로보다 좁게 설계된 듯하며, 이는 방문객이 기대한 동</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/t3link-002-ojhbjb.html">글룸헤이븐 2 판 고를 때 Ueno park 안내 같은 길 찾기 전략</a>
+        <p class="post-item__summary">중고 글룸헤이븐 세트 가격에 따라 판별 기준을 묻는 질문이 항상 먼저 따라다녀. 특히 1 판과 2 판 사이에서 클래스 카드 7 종의 스탯 변경 사항이 핵심 논쟁거리야. 많은 사람이 단순히 가격을 따</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/t3link-004-1nse9dr.html">Ueno park 안내처럼 숨겨진 데이터의 경로를 파헤치다</a>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/t3link-005-10yxx4i.html">..</a>
+        <p class="post-item__summary">우에노 공원은 도쿄의 대표적인 휴식 공간이자 문화와 예술이 어우러진 대규모 도심 속 공원입니다. 이곳은 역사적인 의미를 간직하고 있을 뿐만 아니라 계절마다 다채로운 자연의 아름다움을 선사하여 수많은</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/t3link-005-1hew7s6.html">Ueno park 안내를 하며 본 테라포밍 마스의 2 인 체력 밸런스 붕괴 논리</a>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/tp-link-20260812-tp3-0004.html">같은 이어폰이 기기마다 다른 소리를 내는 이유</a>
+        <p class="post-item__summary">유선 이어폰을 다른 기기에 연결했을 때 음색이 변하는 주된 원인은 재생 기기의 출력 임피던스 차이에 있다. 기기의 출력 임피던스가 이어폰 임피던스보다 지나치게 높으면 이어폰 고유의 주파수 응답 특성</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <a class="pager__link" href="posts-2.html">2</a>
+      <span class="pager__current">3</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
